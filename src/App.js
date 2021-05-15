@@ -4,9 +4,10 @@ import { Bar, Line } from 'react-chartjs-2';
 import './App.css';
 
 const rp = require('request-promise');
+const cheerio = require('cheerio')
 const url = process.env.REACT_APP_URL_DRAW
 
-const cheerio = require('cheerio')
+console.log("URL", url)
 
 const options = {
   scales: {
